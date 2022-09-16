@@ -7,7 +7,7 @@ mongoose.connect('mongodb://localhost:27017/apidb3')
 const itemSchema = new mongoose.Schema({
     name: {type: String, required: true, trim: true},
     price: {type: String, required: true, trim: true},
-    photo: {type: String, required: true, trim: true},
+    photo: {type: String, required: false, trim: true},
     model: {type: String, required: true, trim: true},
 });
 
